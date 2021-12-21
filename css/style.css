@@ -1,0 +1,563 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: Cormorant Garamond,serif;
+    
+}
+
+/* hero section */
+.divider::after{
+    position : absolute;
+    content: '';
+    background: black;
+    display: block;
+    right: 43%;
+    margin-top: 8px;
+    height: 1px;
+    width: 100px;
+}
+
+.carousel-indicators .active{
+    background-color: rgba(0, 0, 0, 0.932);
+}
+
+.carousel-indicators li{
+    background-color: rgba(0, 0, 0, 0.596);
+}
+
+ /* gallery */
+ #heading{
+    color: grey;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.filters {
+    width: 100%;
+    text-align: center;
+}
+
+  #gallery-ul{
+    list-style: none;
+    padding: 20px 0;
+}
+
+ .gallery-li {
+    display: inline;
+    padding: 10px 25px;
+    font-size: 14px;
+    color: #636363;
+    font-weight: 400;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.gallery-li:hover {
+    color: #a6a6a6;
+}
+
+ .gallery-li.active {
+    color: #ccc;
+}
+
+.grid{
+    margin: 0;
+    padding: 0;
+}
+
+ .divider-1::after{
+    position: absolute;
+    display: block;
+    content: '';
+    height: 2px;
+    background: black;
+    width: 100px;
+    left: 46%;
+    margin-top: 5px;
+ }
+
+ /* carousel */
+  #carousel-1{
+      background: url('../images/the-blackrabbit-5u9PFy3D4Lg-unsplash-removebg-preview.png') no-repeat;
+      background-position: top left;
+      background-size: contain;
+      height: 75vh;
+      /* background-color: #E9EDF0 ; */
+      background-color: #FFDAC7 ;
+      z-index: -1;
+  }
+
+  #carousel-2{
+    background: url('../images/pexels-sreejith-rajamani-3594582-removebg-preview.png') no-repeat;
+    background-position: top left;
+    background-size: contain;
+    height: 75vh;
+    background-color: #FFDAC7 ;
+    
+    
+}
+
+#carousel-3{
+    background: url('../images/pexels-brett-sayles-3955665-removebg-preview.png') no-repeat;
+    background-position:  right;
+    background-size: contain;
+    height: 75vh;
+    /* background-color: #E9EDF0 ; */
+    background-color: #FFDAC7 ;
+    /* background-color: #FDD8C4; */
+}
+
+ #zig-1{
+     background: url('../images/banner-7.jpg.webp') no-repeat;
+     background-position: center;
+     background-size: contain;
+     height: 100vh;
+     margin-top: 150px;
+ }
+  
+ #zig-2{
+    background: url('../images/banner-6.jpg.webp') no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 100vh;
+}
+ 
+ #zig-3{
+    background: url('../images/banner-8.jpg.webp') no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 75vh;
+   
+ }
+  
+ #zig-4{
+    background: url('../images/banner-8.jpg.webp') no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 75vh;
+    /* position: absolute; */
+ }
+
+
+  .zin-text{
+     position: absolute;
+     z-index: 1;
+     bottom: 25%;
+     right: 0%;
+     
+  }
+
+  .zin-text-1{
+    position: absolute;
+    z-index: 1;
+    bottom: 35%;
+    left: 10%;  
+ }
+
+ .zin-text-2{
+    position: absolute;
+    z-index: 1;
+    bottom: 35%;
+    left: 10%;
+ }
+
+ .zin-text-3{
+    position: absolute;
+    z-index: 1;
+    bottom: 35%;
+    left: 20%;
+ }
+
+  /* overlay */
+  .wg-box-content {
+    position: relative;
+    width: 90%;
+    max-width: 450px;
+    /* margin: auto; */
+    overflow: hidden;
+  }
+  
+  .wg-box-content .wg-box-content-overlay{
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+   
+  }
+  
+  .wg-box-content:hover .wg-box-content-overlay {
+    opacity: 1;
+  }
+  
+  .wg-box-content-image{
+    width: 100%;
+  }
+  
+  .wg-box-content-details {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .wg-box-content:hover .wg-box-content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+  
+  .wg-box-content-details h3{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+  }
+  
+  .wg-box-content-details p{
+    color: #fff;
+    font-size: 0.8em;
+  }
+  
+  .wg-box-fadeIn-bottom{
+    top: 80%;
+  }
+
+  /* scrolltop */
+  #scroll {
+    position:fixed;
+    right:10px;
+    bottom: 40px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color: #CB8161;
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px;
+    z-index: 10;
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:#ffffff;
+    z-index: 10;
+}
+
+
+   /* about page */
+   
+    .about-banner{
+        background: url('../images/pexels-fox-998521-removebg-preview.png') no-repeat;
+        background-position: right top;
+        background-size: cover;
+        height: 75vh;
+        background-color: #FFDAC7;
+        /* background-attachment: fixed; */
+    }
+    .product-banner{
+      background: url('../images/pexels-fox-998521-removebg-preview.png') no-repeat;
+      background-position: right top;
+      background-size: cover;
+      height: 75vh;
+      background-color: #FFDAC7;
+    }
+    #product-text{
+      position: absolute;
+      bottom: 40%;
+      left: 25%;
+      z-index: 10;
+    }
+
+    /* banner text */
+     #banner-text{
+        position: absolute;
+        bottom: 40%;
+        left: 25%;
+        z-index: 10;
+     }
+
+     .zoom-image:hover{
+       transform: scale(1.07);
+       transition: 0.4s ease-in-out;
+     }
+
+     /* media query */
+     @media all and (max-width: 540px){
+      /* about us */
+       .about-banner{
+        background: none;
+        background-color: #FFDAC7;
+       }
+
+      #banner-text{
+           bottom: 15%;
+           left: 14%;
+     }
+
+     #banner-head{
+         font-size: 70px !important;
+     }
+     #banner-text-1{
+        line-height: 30px !important;
+     }
+      
+     #jewellery-image{
+          margin-top: 50px !important;
+          width: 1000px;
+     }
+
+     #jewellery-image-1{
+        margin-left: 20px !important;
+        margin-top: 10px !important;
+     }
+
+     .text{
+        margin-top: 30px !important;
+        margin-left: 10px !important;
+     }
+     .text-1{
+         margin-left: 10px !important;
+     }
+
+     #contact-about{
+        text-align: center;
+     }
+     #customer-about{
+      text-align: center;
+     }
+
+     #catelog-about{
+      text-align: center;
+     }
+
+     #footer-about{
+       text-align: center;
+     }
+
+     #aboutus-about{
+        text-align: center;
+     }
+
+      /* about us end */
+
+      #carousel-1{
+        background: none;
+        background-color: #FFDAC7;
+      }
+      #carousel-2{
+      background: none;
+      background-color: #FFDAC7;
+      }
+
+      #carousel-3{
+        background: none;
+        background-color: #FFDAC7;
+     }
+
+       #zig-3{
+        display: none;
+       }
+       #jewel-text{
+            font-size: 30px !important;
+            line-height: 40px !important;
+       }
+       #jewel-text-1{
+           font-size: 35px !important;
+           line-height: 40px !important;
+           margin-top: 20px ;
+           
+       }
+      #zig-1{
+         padding: 0px;
+         height: 75vh;
+         margin-bottom: -30px !important;
+      }
+      #zig-2{
+        
+        height: 75vh;
+        margin-bottom: -30px !important;
+      }
+      #zig-4{
+        height: 63vh;
+      }
+      .zin-text{
+        position: absolute;
+        z-index: 1;
+        bottom: 10%;
+        right: 10%;
+        text-align: center;
+        display: block;
+     }
+     .zin-text-1{
+      position: absolute;
+      z-index: 1;
+      bottom: 20%;
+      left: 10%;  
+      text-align: center;
+      display: block;
+   }
+
+   .zin-text-3{
+    position: absolute;
+    z-index: 1;
+    bottom: 15%;
+    left: 12%;  
+    text-align: center;
+    display: block;
+ }
+      #jewel-btn{
+        margin-top: 10px !important;
+        margin-bottom: 25px !important;
+        
+      }
+      #contact-us{
+          text-align: center;
+      }
+      #customer-services{
+        text-align: center;
+      }
+      #about-us{
+        text-align: center;
+      }
+      #catelog{
+        text-align: center;
+      }
+      #copyright{
+        text-align: center;
+      }
+     }
+   
+
+     /* ipad */
+      @media (min-width: 768px) and (max-width: 1024px){
+        #carousel-1{
+          background-position: left top;
+          background-size: cover;
+        }
+
+        #carousel-2{
+           background-color: #FFDAC7;
+           background-position: center;
+           background-size: cover;
+        }
+  
+        #carousel-3{
+          background-position: center;
+          background-size: cover;
+       }
+
+       #zig-1{
+          /* background-position: center;
+          background-size: contain; */
+          height: 75vh;
+          /* margin-top: 0px !important; */
+          /* margin: 5px !important; */
+       }
+
+       #zig-2{
+          /* margin-top: 30px; */
+          position: absolute;
+          top: -20%;
+          right: 0%;
+          /* height: 70vh; */
+       }
+       #zig-3{
+          display: none;
+       }
+       
+       #zig-4{
+          margin: auto;
+          margin-top: 600px !important;
+       }
+
+        /* about us */
+        .about-banner{
+          background: none;
+          background-color: #FFDAC7;
+         }
+       
+       #banner-head{
+           font-size: 70px !important;
+       }
+       #banner-text-1{
+          line-height: 30px !important;
+       }
+       #banner-text{
+           left: 15%;
+           position: absolute;
+       }
+        
+       #jewellery-image{
+            margin-top: 50px !important;
+            width: 1000px;
+       }
+  
+       /* #jewellery-image-1{
+          margin-left: 20px !important;
+          margin-top: 10px !important;
+       } */
+  
+       .text{
+          margin-top: 30px !important;
+          margin-left: 10px !important;
+       }
+       .text-1{
+           margin-left: 10px !important;
+       }
+  
+       /* #contact-about{
+          text-align: center;
+       }
+       #customer-about{
+        text-align: center;
+       }
+  
+       #catelog-about{
+        text-align: center;
+       }
+  
+       #footer-about{
+         text-align: center;
+       }
+  
+       #aboutus-about{
+          text-align: center;
+       } */
+  
+        /* about us end */
+      }
+
+      /* about us page */
+      
+      
+
